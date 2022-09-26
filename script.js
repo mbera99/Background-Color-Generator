@@ -1,3 +1,4 @@
+
 const css = document.querySelector("h3");
 const color1 = document.querySelector(".color1");
 const color2 = document.querySelector(".color2");
@@ -13,7 +14,7 @@ function setGradient() {
         + color2.value
         + ")";
 
-        css.textContent = body.style.background + ";";
+    css.textContent = body.style.background + ";";
     }
 // METHOD 1:
 function getRandomColor() {
@@ -25,7 +26,7 @@ function getRandomColor() {
     return color;
 }
 
-// METHOD 2: (I don't understand it but it works.)
+// // METHOD 2: (I don't understand it but it works.)
 // function getRandomColor() {
 //     return '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
 // }
